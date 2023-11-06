@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <header class="Header">
+            <div class="Header-text">
+                <span class="Header-title">CHARACTER COUNTER</span>
+                <span class="Header-desc"
+                    >Character, Letter and Word Counter</span
+                >
+            </div>
+        </header>
+        <main class="Main">
+            <textarea
+                name="chararea"
+                class="Main-content"
+                id="chararea"
+                placeholder="Please enter your text..."
+            ></textarea>
+
+            <div class="result">
+                <div class="result-item">
+                    <span id="charspan" style="color: blueviolet">0</span>
+                    &nbsp; Characters
+                </div>
+                <div class="result-item">
+                    <span id="wordspan" style="color: blueviolet">0</span> &nbsp
+                    Words
+                </div>
+                <div class="result-item">
+                    <span id="spaceoutspan" style="color: blueviolet">0</span>
+                    &nbsp Without White Space
+                </div>
+                <div class="result-item">
+                    <span id="paragraphspan" style="color: blueviolet">0</span>
+                    &nbsp Paragraphs
+                </div>
+            </div>
+        </main>
+        <script src="/script.js"></script>
+    </body>
+</html>
