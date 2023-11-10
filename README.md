@@ -5,6 +5,8 @@ This word and character counter plugin developed using Html Dom allows you to co
 
 Demo: https://mustafakemalgordesli.github.io/char-counter/
 
+<img src="https://github.com/mustafakemalgordesli/char-counter/blob/main/ss.png" />
+
 ## License
 
 MIT License
