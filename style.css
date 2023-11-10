@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&family=Roboto+Slab:wght@600&display=swap');
+
 html,
 body {
     width: 100%;
@@ -7,9 +9,9 @@ body {
 }
 
 .Header {
-    height: 5.125rem;
+    height: 8rem;
     display: flex;
-    margin-left: 20px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -23,19 +25,18 @@ body {
 .Header-title {
     font-size: 28px;
     font-weight: 600;
-    color: rgb(35, 11, 194)
+    color: rgb(35, 11, 194);
+    font-family: 'Roboto Slab', serif;
 }
 
 .Header-desc {
     font-size: 20px;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 .Main {
-    height: calc(100% - 5.125rem);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 70%;
     min-width: 375px;
     margin-left: auto;
@@ -45,12 +46,12 @@ body {
 .Main-content {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: 1px solid #888;
+    /* border: 1px solid #888; */
     padding: 15px;
     font-size: 18px;
     width: calc(100% - 30px);
-    min-height: 375px;
-    height: 60%;
+    min-height: 450px;
+    height: 80%;
     resize: vertical;
 }
 
@@ -63,17 +64,26 @@ body {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #888;
+    border-top: 0px;
 }
 
 .result-item {
     font-size: 22px;
     /* padding: 20px 60px; */
     padding: 12px 0px;
-    border: 1px solid #888;
+    /* border: 1px solid #888; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.result-item:not(:last-child) {
+    border-right: 1px solid #888;
 }
 
 @media (max-width: 1080px) {
@@ -83,6 +93,12 @@ body {
 
     .result-item {
         padding: 12px 0px;
+        border-bottom: 1px solid #888;
+        text-align: center;
+    }
+
+    .result-count {
+        min-width: 60px;
     }
 }
 
